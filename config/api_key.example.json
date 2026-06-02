@@ -1,0 +1,5 @@
+{
+  "_comment": "Rename this file to api_key.json and add your OpenRouter API key",
+  "OPENROUTER_API_KEY": "sk-or-v1-YOUR_KEY_HERE",
+  "model": "anthropic/claude-sonnet-4"
+}
