@@ -5,16 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>LifeSim — An LPowered Life Simulation</title>
+  <title>LifeSim — An LLM-Powered Life Simulation</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
     #app { width: 100%; height: 100%; max-width: 480px; margin: 0 auto; }
+
+    /* ── MOBILE SLIDER FIX ── */
+    /* The #1 rule: input height MUST be 44px for mobile touch hit-testing */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 44px;
+      width: 100%;
+      background: transparent;
+      touch-action: pan-y;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 4px;
+      border-radius: 2px;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFD700;
+      border: 2px solid #FFF;
+      margin-top: -20px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    input[type="range"]::-moz-range-track {
+      height: 4px;
+      border-radius: 2px;
+      border: none;
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFD700;
+      border: 2px solid #FFF;
+      cursor: pointer;
+    }
+    input[type="range"]:focus { outline: none; }
+    input[type="range"]:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px rgba(255,215,0,0.4);
+    }
   </style>
-  <script type="module" crossorigin src="./assets/index-RGfwi2Ye.js"></script>
+  <script type="module" crossorigin src="./assets/index-Bn1KL8R9.js"></script>
 </head>
 <body>
   <div id="app"></div>
 </body>
 </html>
-<!-- build: 20260603T033015Z -->
+<!-- build: 20260603T041849Z -->
